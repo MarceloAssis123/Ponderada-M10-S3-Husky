@@ -57,9 +57,6 @@ npx husky init
 Criamos um hook de pré-commit para executar o lint e a compilação:
 
 ```bash
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 echo "🔍 Verificando o código com ESLint..."
 npm run lint || (echo "❌ Falha no lint. Por favor, corrija os erros antes de fazer commit." && exit 1)
 
@@ -74,9 +71,6 @@ echo "✅ Pré-commit passou com sucesso!"
 Criamos um hook de pré-push para executar os testes:
 
 ```bash
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 echo "🧪 Executando testes..."
 npm test || (echo "❌ Falha nos testes. Por favor, corrija os testes antes de fazer push." && exit 1)
 
