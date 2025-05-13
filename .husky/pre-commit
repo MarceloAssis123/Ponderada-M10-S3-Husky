@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Verificando o código com ESLint..."
+npm run lint || (echo "❌ Falha no lint. Por favor, corrija os erros antes de fazer commit." && exit 1)
+
+echo "🏗️ Compilando o projeto..."
+npm run build || (echo "❌ Falha na compilação. Por favor, corrija os erros antes de fazer commit." && exit 1)
+
+echo "✅ Pré-commit passou com sucesso!"

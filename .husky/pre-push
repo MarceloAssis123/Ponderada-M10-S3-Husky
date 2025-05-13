@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🧪 Executando testes..."
+npm test || (echo "❌ Falha nos testes. Por favor, corrija os testes antes de fazer push." && exit 1)
+
+echo "✅ Pré-push passou com sucesso!" 

@@ -1,0 +1,29 @@
+{
+  "name": "ponderada-m10-s3-husky",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "node -e \"console.log('Building project...')\"",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarceloAssis123/Ponderada-M10-S3-Husky.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MarceloAssis123/Ponderada-M10-S3-Husky/issues"
+  },
+  "homepage": "https://github.com/MarceloAssis123/Ponderada-M10-S3-Husky#readme",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0"
+  }
+}
